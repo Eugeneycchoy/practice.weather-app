@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Another Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <form onsubmit="event.preventDefault();" role="search">
+          <label for="search">Search for stuff</label>
+          <input
+            id="search"
+            type="search"
+            placeholder="Search..."
+            autofocus
+            required
+          />
+          <button type="submit">Go</button>
+        </form>
+      </div>
+      <div class="location">
+        <h1>Karachi</h1>
+      </div>
+      <div class="date-and-time">
+        <p class="day">Monday</p>
+        <p class="time">17:00</p>
+      </div>
+
+      <div class="weather-logo">
+        <img src="images/clear.png" alt="" />
+      </div>
+
+      <div class="temperature"><h2>22°C</h2></div>
+      <div class="greetings">
+        <p>GOOD MORNING</p>
+      </div>
+
+      <hr class="line-under-location" />
+
+      <div class="detailed-infos">
+        <div class="wind-speed">
+          <div class="wind-logo fa-xl">
+            <i class="fa-solid fa-wind"></i>
+          </div>
+          <p>WIND</p>
+          <p>15 km/h</p>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="humidity">
+          <div class="humidity-logo fa-xl">
+            <i class="fa-solid fa-water"></i>
+          </div>
+          <p>HUMIDITY</p>
+          <p>50%</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/713056d6a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- Font Awesome icons: <script src="https://kit.fontawesome.com/713056d6a3.js" crossorigin="anonymous"></script>-->
+<!-- Weather API key: b83f317e1477c365ff9be2b63f14043a -->
